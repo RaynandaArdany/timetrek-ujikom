@@ -37,6 +37,7 @@ const routes = [
   {
     path: "/profile",
     name: "Profile",
+    // beforeEnter: cekToken,
     component: Profile,
   },
   {
@@ -55,6 +56,20 @@ const routes = [
     component: SignUp,
   },
 ];
+
+// function cekToken(to, from, next) {
+//   var isAuthenticated = false;
+//   if (localStorage.getItem('token')) {
+//       isAuthenticated = true;
+//       next();
+//   }
+//   else {
+//       isAuthenticated = false;
+//       next('/login')
+//   }
+
+
+// }
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),

@@ -50,17 +50,17 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="d-flex flex-column h-100">
-                  <p class="mb-1 pt-2 text-bold">Built by developers</p>
-                  <h5 class="font-weight-bolder">Vite Soft UI Dashboard</h5>
+                  <p class="mb-1 pt-2 text-bold">dibangun oleh pengembang</p>
+                  <h5 class="font-weight-bolder">Timetrek Dashboard</h5>
                   <p class="mb-5">
-                    From colors, cards, typography to complex elements, you will
-                    find the full documentation.
+                    Dari warna, kartu, tipografi hingga elemen kompleks, Anda akan melakukannya
+                    temukan dokumentasi lengkapnya.
                   </p>
                   <a
                     class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto"
                     href="javascript:;"
                   >
-                    Read More
+                    Baca Salengkapnya
                     <i
                       class="fas fa-arrow-right text-sm ms-1"
                       aria-hidden="true"
@@ -103,17 +103,17 @@
               class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3"
             >
               <h5 class="text-white font-weight-bolder mb-4 pt-2">
-                Work with the rockets
+                Bekerja dengan timetrek
               </h5>
               <p class="text-white">
-                Wealth creation is an evolutionarily recent positive-sum game.
-                It is all about who take the opportunity first.
+                Penciptaan kekayaan adalah sebuah permainan positif-sum yang secara evolusioner terkini.
+                Ini semua tentang siapa yang mengambil peluang terlebih dahulu.
               </p>
               <a
                 class="text-white text-sm font-weight-bold mb-0 icon-move-right mt-auto"
                 href="javascript:;"
               >
-                Read More
+                Baca Selengkapnya
                 <i
                   class="fas fa-arrow-right text-sm ms-1"
                   aria-hidden="true"
@@ -140,22 +140,22 @@
         </div>
       </div>
     </div>
-    <div class="row my-4">
+    <!-- <div class="row my-4">
       <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
         <projects-card />
       </div>
       <div class="col-lg-4 col-md-6">
         <Orders-card />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
 import Card from "@/examples/Cards/Card.vue";
 import ActiveUsersChart from "@/examples/Charts/ActiveUsersChart.vue";
 import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
-import OrdersCard from "./components/OrdersCard.vue";
-import ProjectsCard from "./components/ProjectsCard.vue";
+// import OrdersCard from "./components/OrdersCard.vue";
+// import ProjectsCard from "./components/ProjectsCard.vue";
 import US from "../assets/img/icons/flags/US.png";
 import DE from "../assets/img/icons/flags/DE.png";
 import GB from "../assets/img/icons/flags/GB.png";
@@ -167,8 +167,8 @@ export default {
     Card,
     ActiveUsersChart,
     GradientLineChart,
-    ProjectsCard,
-    OrdersCard,
+    // ProjectsCard,
+    // OrdersCard,
   },
   data() {
     return {
@@ -181,7 +181,7 @@ export default {
           iconClass: "ni ni-money-coins",
         },
         users: {
-          title: "Today's Users",
+          title: "Pengguna",
           value: "2,300",
           percentage: "+3%",
           iconClass: "ni ni-world",

@@ -14,7 +14,7 @@
               href="https://www.creative-tim.com"
               class="font-weight-bold"
               target="_blank"
-              >Creative Tim</a
+              >Timetrek</a
             >
             for a better web.
           </div>
@@ -25,10 +25,10 @@
           >
             <li class="nav-item">
               <a
-                href="https://www.creative-tim.com"
+                href="#"
                 class="nav-link text-muted"
                 target="_blank"
-                >Creative Tim</a
+                >Timetrek</a
               >
             </li>
             <li class="nav-item">

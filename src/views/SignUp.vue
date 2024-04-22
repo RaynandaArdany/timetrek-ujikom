@@ -94,14 +94,17 @@
           <div class="card-body">
             <form role="form" @submit.prevent="performRegister">
               <div class="mb-3">
-                <vsud-input type="text" placeholder="Name" aria-label="Name" />
+                <vsud-input v-model="username" type="Nama Pengguna" placeholder="Nama Pengguna" aria-label="Nama Pengguna" />
               </div>
               <div class="mb-3">
-                <vsud-input type="email" placeholder="Email" aria-label="Email" />
+                <vsud-input v-model="email" type="email" placeholder="Email" aria-label="Email" />
               </div>
               <div class="mb-3">
-                <vsud-input type="password" placeholder="Password" aria-label="Password" />
+                <vsud-input v-model="password" type="password" placeholder="Password" aria-label="Password" />
               </div>
+              <!-- <div class="mb-3">
+                <vsud-input v-model="role" type="text" placeholder="Role" aria-label="Role" />
+              </div> -->
               <vsud-checkbox id="flexCheckDefault" checked>
                 I agree the
                 <a
@@ -149,9 +152,10 @@ export default {
   data() {
     return {
       bgImg,
-      name:'',
+      username:'',
       email: '',
-            password: '',
+      password: '',
+      role:'',
     }
   },
   created() {
@@ -170,7 +174,7 @@ export default {
         ...mapActions('auth', ['register']),
         async performRegister() {
             const dataUser = {
-                name: this.name,
+                username: this.username,
                 email: this.email,
                 password: this.password,
             };
@@ -179,7 +183,7 @@ export default {
 
             if (success) {
                 // Redirect to the desired route on successful login
-                this.$router.push('/');
+                this.$router.push('/sign-in');
             } else {
                 alert("Register Gagal");
             }

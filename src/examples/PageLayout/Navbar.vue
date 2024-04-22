@@ -7,10 +7,10 @@
     <div class="container">
       <router-link
         class="navbar-brand font-weight-bolder ms-lg-0 ms-3"
-        to="/dashboard"
+        to="/sign-in"
         v-bind="$attrs"
         :class="isBlur ? 'text-dark' : 'text-white'"
-      >Vite Soft UI Dashboard</router-link>
+      >Timetrek</router-link>
       <button
         class="navbar-toggler shadow-none ms-2"
         type="button"
@@ -28,7 +28,7 @@
       </button>
       <div id="navigation" class="collapse navbar-collapse">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link
               class="nav-link d-flex align-items-center me-2 active"
               aria-current="page"
@@ -41,8 +41,8 @@
               ></i>
               Dashboard
             </router-link>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <router-link class="nav-link me-2" to="/profile">
               <i
                 class="fa fa-user opacity-6 me-1"
@@ -51,7 +51,7 @@
               ></i>
               Profile
             </router-link>
-          </li>
+          </li> -->
           <li class="nav-item">
             <router-link class="nav-link me-2" to="/sign-up">
               <i
@@ -62,7 +62,7 @@
               Sign Up
             </router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link class="nav-link me-2" to="/sign-in">
               <i
                 class="fas fa-key opacity-6 me-1"
@@ -71,9 +71,9 @@
               ></i>
               Sign In
             </router-link>
-          </li>
+          </li> -->
         </ul>
-        <ul class="navbar-nav d-lg-block d-none">
+        <!-- <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a
               href="https://www.creative-tim.com/product/vue-soft-ui-dashboard"
@@ -81,7 +81,7 @@
               :class="isBlur ? 'bg-gradient-dark' : 'bg-gradient-success'"
             >Free download</a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </nav>

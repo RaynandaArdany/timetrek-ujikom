@@ -23,7 +23,7 @@
         </div>
         <div class="col-auto my-auto">
           <div class="h-100">
-            <h5 class="mb-1">Alec Thompson</h5>
+            <h5 class="mb-1">Raynanda</h5>
             <p class="mb-0 text-sm font-weight-bold">CEO / Co-Founder</p>
           </div>
         </div>
@@ -364,7 +364,7 @@
                 <div
                   class="d-flex align-items-start flex-column justify-content-center"
                 >
-                  <h6 class="mb-0 text-sm">Peterson</h6>
+                  <h6 class="mb-0 text-sm">Raynanda</h6>
                   <p class="mb-0 text-xs">Have a great afternoon..</p>
                 </div>
                 <a
@@ -481,6 +481,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
 import VsudSwitch from "@/components/VsudSwitch.vue";
 import ProfileCard from "./components/ProfileCard.vue";
 import VsudAvatar from "../components/VsudAvatar.vue";
@@ -538,5 +539,14 @@ export default {
   beforeUnmount() {
     this.$store.state.isAbsolute = false;
   },
+    computed: {
+        ...mapGetters('user', ['getUsers'])
+    },
+    methods: {
+        ...mapActions('user', ['fetchUsers']),
+    },
+    created() {
+        this.fetchUsers();
+    }
 };
 </script>

@@ -12,34 +12,41 @@
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse nav-text="Tables" :to="{ name: 'Tables' }">
+        <sidenav-collapse nav-text="Jadwal" :to="{ name: 'Tables' }">
           <template #icon>
             <icon name="tables" />
           </template>
         </sidenav-collapse>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
+        <sidenav-collapse nav-text="Kalender" :to="{ name: 'Tables' }">
+          <template #icon>
+            <icon name="rtl-page" />
+          </template>
+        </sidenav-collapse>
+      </li> -->
+      <!-- <li class="nav-item">
         <sidenav-collapse nav-text="Billing" :to="{ name: 'Billing' }">
           <template #icon>
             <icon name="billing" />
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
 
       <li class="nav-item">
-        <sidenav-collapse nav-text="Virtual Reality" :to="{ name: 'Virtual Reality' }">
+        <sidenav-collapse nav-text="Virtual" :to="{ name: 'Virtual Reality' }">
           <template #icon>
             <icon name="virtual-reality" />
           </template>
         </sidenav-collapse>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-collapse nav-text="RTL" :to="{ name: 'Rtl' }">
           <template #icon>
             <icon name="rtl-page" />
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
@@ -69,7 +76,7 @@
       </li>
     </ul>
   </div>
-  <div class="pt-3 mx-3 mt-3 sidenav-footer">
+  <!-- <div class="pt-3 mx-3 mt-3 sidenav-footer">
     <sidenav-card
       :class="cardBg"
       text-primary="Need Help?"
@@ -83,19 +90,19 @@
       href="https://www.creative-tim.com/product/vue-soft-ui-dashboard-pro?ref=vsud"
       type="button"
     >Upgrade to pro</a>
-  </div>
+  </div> -->
 </template>
 <script>
 import Icon from "@/components/Icon.vue";
 import SidenavCollapse from "./SidenavCollapse.vue";
-import SidenavCard from "./SidenavCard.vue";
+// import SidenavCard from "./SidenavCard.vue";
 
 export default {
   name: "SidenavList",
   components: {
     Icon,
     SidenavCollapse,
-    SidenavCard,
+    // SidenavCard,
   },
   props: {
     cardBg: {
